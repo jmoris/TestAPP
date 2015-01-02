@@ -1,7 +1,6 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<? require("info.php"); ?>
 <meta charset="UTF-8">
 <title>Aplic. Web de jQuery Mobile</title>
 <link href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" rel="stylesheet" type="text/css"/>
@@ -19,7 +18,12 @@
 			<li><a href="#page2">Página dos</a></li>
             <li><a href="#page3">Página tres</a></li>
 			<li><a href="#page4">Página cuatro</a></li>
-		</ul>		
+		</ul>	
+        <script type="text/javascript">
+$(document).ready(function() {
+    $(".loa").load("info.php");
+});
+</script>	
 	</div>
 	<div data-role="footer">
 		<h4>Pie de página</h4>
